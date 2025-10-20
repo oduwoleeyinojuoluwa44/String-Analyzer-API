@@ -1,19 +1,22 @@
 {
   "name": "stringanalyzer",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "A String Analyzer API built with Node.js, Express, and TypeScript",
+  "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "npx nodemon --exec npx ts-node src/index.ts"
+    "dev": "npx nodemon --exec npx ts-node src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
+  "dependencies": {
+    "express": "^4.19.2"
+  },
   "devDependencies": {
     "@types/express": "^4.17.21",
     "@types/node": "^20.12.12",
-    "express": "^4.19.2",
     "nodemon": "^3.1.0",
     "ts-node": "^10.9.2",
     "typescript": "^5.4.5"
